@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+p{
+    min-width: 600px;
+}
+
+.loading-animation{
+    animation: fadein 2s ease forwards;
+}
+
+@keyframes fadein{
+    0%{
+        scale: 2;
+        filter:blur(10px);
+        opacity: 0;
+        translate: 0 500;
+
+    }
+    100%{
+        scale: 1;
+        filter: blur(0);
+        opacity: 1;
+        translate: 0;
+    }
+}
